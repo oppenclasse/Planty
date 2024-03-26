@@ -1,0 +1,13 @@
+
+
+
+/* FOOTER */
+#site-footer a {
+   
+    text-align: center;
+    color: black;
+    background-color: white !important;
+    text-decoration: none; /* Supprimer le soulignement */
+    color: inherit; /* Utiliser la couleur par défaut du texte */
+    display: block; /* Centrer le lien */
+}

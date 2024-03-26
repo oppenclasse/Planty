@@ -30,7 +30,7 @@
 		wp_body_open();
 		?>
 
-		<header id="site-header" class="header-footer-group">
+		<header id="site-header" class="header-footer-group sticky-top">
 
 			<div class="header-inner section-inner">
 
