@@ -30,9 +30,9 @@
 		wp_body_open();
 		?>
 
-		<header id="site-header" class="header-footer-group sticky-top">
+		<header id="site-header" class="header-footer-group">
 
-			<div class="header-inner section-inner">
+			<div class="header-inner">
 
 				<div class="header-titles-wrapper">
 

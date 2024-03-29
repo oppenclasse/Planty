@@ -1,3 +1,9 @@
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+body * {
+   font-family: 'Syne', sans-serif; /* Utilisation de la police 'Syne' */
+}
 
 
 
@@ -10,4 +16,94 @@
     text-decoration: none; /* Supprimer le soulignement */
     color: inherit; /* Utiliser la couleur par défaut du texte */
     display: block; /* Centrer le lien */
+    
+}
+
+footer#site-footer.header-footer-group {
+   margin-top: 0%;
+}
+
+/* HEADER */
+.header-inner {
+   padding: 0;
+}
+/* Style bouton commander */
+li.menu-item-40 a {
+    color: white !important;
+    display: inline-block;
+    padding: 20px 35px;
+    background-color: #DC9F96;
+    text-align: center;
+ }
+ /* style lien nous rencontrer et admin */
+ li.menu-item-41 a, li.menu-item-42 a {
+    color: black !important;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 35px;
+ }
+
+ .custom-logo-link {
+   margin-left: 35px;
+ }
+ 
+/* modif taille logo */
+ img.custom-logo {
+    max-width: 200px;
+ }
+
+
+/* centrer le bouton envoyer */
+input.envoyer-button {
+   display: block;
+   margin: 0 auto;
+   background-color: #E0B9B4 !important;
+   border-radius: 5px;
+
+}
+
+/* style formulaire de commande */
+/* Conteneur des champs */
+.champs-container {
+   display: flex; /* Utilisation de flexbox pour la disposition */
+   justify-content: space-around; /* Espace entre les éléments */
+   flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
+}
+/* Styles pour les champs de quantité */
+.champ {
+   width: 200px; /* Largeur de chaque champ */
+   margin: 20px auto; /* Centrage horizontal et espacement entre les champs */
+   text-align: center; /* Centrage du texte dans les champs */
+}
+
+/* Styles pour les conteneurs d'images */
+.image-container {
+   position: relative;
+   display: inline-block;
+   width: 190px; /* Largeur de l'image */
+   height: 128px; /* Hauteur de l'image */
+   margin-bottom: 10px; /* Espacement entre les images */
+}
+
+/* Styles pour les images */
+.image-form {
+   width: 100%; /* Pour s'adapter à la largeur du conteneur */
+   height: 100%; /* Pour s'adapter à la hauteur du conteneur */
+}
+
+/* Styles pour les titres d'images */
+.image-title {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 22px;
+   font-weight: 800;
+   color: white;
+}
+
+/* Styles pour les champs de saisie */
+input[type="number"] {
+   width: 100%; /* Pour s'adapter à la largeur du conteneur */
+   margin-top: 5px; /* Espacement entre l'image et le champ de saisie */
 }
