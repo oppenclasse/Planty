@@ -53,16 +53,19 @@ li.menu-item-40 a {
  }
 
 
+
+
+/* style formulaire de commande */
+
 /* centrer le bouton envoyer */
 input.envoyer-button {
    display: block;
    margin: 0 auto;
    background-color: #E0B9B4 !important;
    border-radius: 5px;
+   margin-top: 20px;
 
 }
-
-/* style formulaire de commande */
 /* Conteneur des champs */
 .champs-container {
    display: flex; /* Utilisation de flexbox pour la disposition */
@@ -94,16 +97,53 @@ input.envoyer-button {
 /* Styles pour les titres d'images */
 .image-title {
    position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   top: 30%;
    font-size: 22px;
    font-weight: 800;
    color: white;
+   width: 100%;
 }
 
 /* Styles pour les champs de saisie */
 input[type="number"] {
-   width: 100%; /* Pour s'adapter à la largeur du conteneur */
+   width: 30%; /* Pour s'adapter à la largeur du conteneur */
    margin-top: 5px; /* Espacement entre l'image et le champ de saisie */
+}
+.wpcf7-form-control-wrap {
+   display: flex;
+   justify-content: center;
+   
+}
+
+/* style formulaire partie coordonner */
+
+.form-container {
+   display: flex;
+   align-items: flex-start;
+}
+
+.info-block, .delivery-block {
+   width: 50%;
+   height: ;
+}
+.info-block{
+   padding-right: 45px;
+}
+.delivery-block {
+   padding-left: 45px;
+   border-left: 1px solid rgb(219, 219, 219);
+}
+
+
+.separator {
+   border-left: 1px solid #000;
+   height: 100%;
+   margin: 0 20px;
+}
+.elementor-element.elementor-element-b67d0d5.elementor-widget.elementor-widget-shortcode {
+   color: white;
+}
+
+.wpcf7-form-control.wpcf7-text {
+   border-radius: 7px;
 }
