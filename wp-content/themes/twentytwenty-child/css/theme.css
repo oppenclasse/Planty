@@ -104,7 +104,7 @@ input.envoyer-button {
    width: 100%;
 }
 
-/* Styles pour les champs de saisie */
+/* Styles pour les champs de saisie de quantitée*/
 input[type="number"] {
    width: 30%; /* Pour s'adapter à la largeur du conteneur */
    margin-top: 5px; /* Espacement entre l'image et le champ de saisie */
@@ -120,26 +120,31 @@ input[type="number"] {
 .form-container {
    display: flex;
    align-items: flex-start;
+   flex-wrap: wrap;
+   
+}
+.form-container h3 {
+   margin-top: 0px;
 }
 
 .info-block, .delivery-block {
    width: 50%;
-   height: ;
+   min-width: 380px;
+   height: 100%;
+   margin-top: 35px;
+   
 }
-.info-block{
+
+
+.info-block {
    padding-right: 45px;
 }
+
 .delivery-block {
+   border-left: 1px solid rgb(219, 219, 219); 
    padding-left: 45px;
-   border-left: 1px solid rgb(219, 219, 219);
 }
 
-
-.separator {
-   border-left: 1px solid #000;
-   height: 100%;
-   margin: 0 20px;
-}
 .elementor-element.elementor-element-b67d0d5.elementor-widget.elementor-widget-shortcode {
    color: white;
 }
