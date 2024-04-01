@@ -141,7 +141,7 @@ input[type="number"] {
 }
 
 .delivery-block {
-   border-left: 1px solid rgb(219, 219, 219); 
+   border-left: 1px solid white; 
    padding-left: 45px;
 }
 
@@ -152,3 +152,4 @@ input[type="number"] {
 .wpcf7-form-control.wpcf7-text {
    border-radius: 7px;
 }
+
