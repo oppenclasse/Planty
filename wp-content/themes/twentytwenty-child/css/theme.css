@@ -34,14 +34,30 @@ li.menu-item-40 a {
     padding: 20px 35px;
     background-color: #DC9F96;
     text-align: center;
+    text-decoration: none !important; /* Supprimer le soulignement */
+ }
+ li.menu-item-40 a:hover {
+   background-color: #C02E44;
+   transition: transform 1ms ease;
  }
  /* style lien nous rencontrer et admin */
- li.menu-item-41 a, li.menu-item-42 a {
-    color: black !important;
-    display: inline-block;
-    text-align: center;
-    padding: 20px 35px;
+ li.menu-item-41 a,
+ li.menu-item-42 a {
+     color: black !important;
+     display: inline-block;
+     text-align: center;
+     padding: 20px 35px;
+     text-decoration: none !important; /* Supprimer le soulignement */
+     position: relative; /* Nécessaire pour positionner l'ombre */
+     transition: transform 1ms ease, text-shadow 1ms ease; /* Ajouter une transition pour l'effet de transformation et d'ombre */
  }
+ 
+ li.menu-item-41 a:hover,
+ li.menu-item-42 a:hover {
+     transform: translateX(10px)  scale(0.90); /* Déplacer légèrement le texte vers la droite et rétrécir*/
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajouter une légère ombre */
+ }
+ 
 
  .custom-logo-link {
    margin-left: 35px;
@@ -52,20 +68,25 @@ li.menu-item-40 a {
     max-width: 200px;
  }
 
-
-
-
 /* style formulaire de commande */
 
-/* centrer le bouton envoyer */
+/* le bouton envoyer du formulair */
 input.envoyer-button {
+   color: white !important;
    display: block;
    margin: 0 auto;
    background-color: #E0B9B4 !important;
    border-radius: 5px;
    margin-top: 20px;
-
+   text-transform: capitalize !important; /* Met seulement la première lettre en majuscule */
+   
 }
+.envoyer-button:hover {
+   text-decoration: none !important;
+   background-color: #C02E44 !important;
+   transition: transform 1ms ease;
+   color: white !important;
+ }
 /* Conteneur des champs */
 .champs-container {
    display: flex; /* Utilisation de flexbox pour la disposition */
@@ -108,6 +129,9 @@ input.envoyer-button {
 input[type="number"] {
    width: 30%; /* Pour s'adapter à la largeur du conteneur */
    margin-top: 5px; /* Espacement entre l'image et le champ de saisie */
+   -webkit-appearance: none; /* Pour WebKit (Safari/Chrome) */
+    -moz-appearance: textfield; /* Pour Firefox */
+    appearance: textfield; /* Pour d'autres navigateurs */
 }
 .wpcf7-form-control-wrap {
    display: flex;

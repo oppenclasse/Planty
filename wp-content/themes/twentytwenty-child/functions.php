@@ -11,6 +11,7 @@ function theme_enqueue_styles(){
 }
 // Fonction pour ajouter un lien "Admin" dans le menu de navigation
 function ajouter_lien_admin_au_menu( $items, $args ) {
+    //Vérification si l'utilisateur est connecté et si le menu est le menu principal
     if ( is_user_logged_in() && $args->theme_location == 'primary' ) {
         // Récupérer la position du lien "Nous Rencontrer"
         $position_nous_rencontrer = strpos($items, 'Nous Rencontrer');
